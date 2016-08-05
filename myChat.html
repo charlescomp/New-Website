@@ -1,0 +1,34 @@
+ <html>
+  <head>
+  </head>
+  <body>
+    <!-- What user will use for input -->
+    <input placeholder='Name' type='text' id='name'>
+    <input placeholder='Message' type='text' id='message'>
+    <!-- button for sending message to message board -->
+    <button onclick='sendMessage()' id='js'>Post Me!!</button>
+    <!-- Empty div where the messages will show up -->
+    <div id='messageBoard'></div>
+    <!-- Paste your snippet here, will include firebase CDN -->
+    
+<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCqviPtdl4anOadx44O42fQlxGiHtdnCtk",
+    authDomain: "charlesmessenger-1d3fe.firebaseapp.com",
+    databaseURL: "https://charlesmessenger-1d3fe.firebaseio.com",
+    storageBucket: "charlesmessenger-1d3fe.appspot.com",
+  };
+  firebase.initializeApp(config);
+</script>
+  <!-- adding jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- script we'll make dynamic changes with. You'll have to create this file -->
+    <script src='myChat.js'></script>
+  </body>
+</html>
+
+
